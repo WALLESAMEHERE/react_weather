@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './images/logo.svg';
 import './style/App.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Weather from './components/Weather/Weather';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="columns">
+        <div className="column is-6 is-offset-one-two">
+          <div className="container">
+            <Header />
+            <Weather />
+            <Footer />
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
