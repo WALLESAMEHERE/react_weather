@@ -8,12 +8,10 @@ class App extends Component {
   render() {
     return (
       <div className="columns">
-        <div className="column is-6 is-offset-one-two">
-          <div className="container">
+        <div className="column is-6 is-offset-3 box">
             <Header />
             <Weather />
             <Footer />
-          </div>
         </div>
       </div>
     );
@@ -21,3 +19,4 @@ class App extends Component {
 }
 
 export default App;
+
