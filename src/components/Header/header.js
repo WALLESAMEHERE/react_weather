@@ -1,30 +1,29 @@
 import React, { Component } from 'react';
+import WeatherForm from '../WeatherForm';
 
 class Header extends Component {
-
-constructor(props) {
-    super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.state = {
-        city:null
-    }
+  constructor() {
+    super();
+      this.state = {          obj:''
+      };
+      this.secWeter = this.secWeter.bind(this);
   }
-handleSubmit(e) {
-    e.preventDefault();
-    let yourCity = this.refs.name.value;
-    this.setState({city: yourCity});
+  secWeter(a){
+    this.setState({
+      obj:a
+    });
+    this.props.updateShared(this.state.obj);
   }
-  render() {
+  render(w) {
     return (
     	 <header>
          	<div className="">
          		<div className="">
          			 <h1 className="title"> WHAT WEATHER ??</h1>
-						<form onSubmit={this.handleSubmit}>
-						    <input type="" ref="name" placeholder="wpisz miasto" />
-						     <button type="submit">Login</button>
-						</form>
-                     <p className="currentCity">{this.state.city}</p>
+                        <WeatherForm testWeter={this.secWeter} 
+                                     // testLink={this.state.location}
+                                     />
+                     <p className="currentCity">place : {this.state.obj.name}</p>
          		</div>
          	</div>
         </header>
