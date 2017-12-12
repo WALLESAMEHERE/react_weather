@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
 import './style/App.css';
-
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Weather from './components/Weather/Weather';
-
 
 class App extends Component {
   constructor() {
     super();
       this.state = {
           cityWeather:''
-      };     this.updateState = this.updateState.bind(this);
+      };     
+      this.getWeather = this.getWeather.bind(this);
   }
-  updateState(props){
+  getWeather(obj){
     this.setState({
-      cityWeather:props
+      cityWeather:obj
     });
   }
   render() {
     return (
       <div className="columns">
         <div className="column is-6 is-offset-3 box">
-            <Header updateShared={this.updateState} />
+            <Header updateObj={this.getWeather} />
             <Weather currentWeather={this.state.cityWeather}/>
             <Footer />
         </div>
@@ -30,6 +29,5 @@ class App extends Component {
     );
   }
 }
-
 export default App;
 

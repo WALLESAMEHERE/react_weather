@@ -6,13 +6,13 @@ class Header extends Component {
     super();
       this.state = {          obj:''
       };
-      this.secWeter = this.secWeter.bind(this);
+      this.getWeather = this.getWeather.bind(this);
   }
-  secWeter(a){
+  getWeather(a){
     this.setState({
       obj:a
     });
-    this.props.updateShared(this.state.obj);
+    this.props.updateObj(this.state.obj);
   }
   render(w) {
     return (
@@ -20,10 +20,8 @@ class Header extends Component {
          	<div className="">
          		<div className="">
          			 <h1 className="title"> WHAT WEATHER ??</h1>
-                        <WeatherForm testWeter={this.secWeter} 
-                                     // testLink={this.state.location}
-                                     />
-                     <p className="currentCity">place : {this.state.obj.name}</p>
+                      <WeatherForm getWeather={this.getWeather} />
+               <p className="currentCity">place : {this.state.obj.name}</p>
          		</div>
          	</div>
         </header>
