@@ -19,8 +19,8 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="columns">
-        <div className="column is-6 is-offset-3 box">
+      <div className="columns ">
+        <div className="column is-6 is-offset-3 container">
             <Header updateObj={this.getWeather} />
             <Weather currentWeather={this.state.cityWeather}/>
             <Footer />

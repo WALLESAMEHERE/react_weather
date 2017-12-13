@@ -14,7 +14,7 @@ class Header extends Component {
     });
     this.props.updateObj(this.state.obj);
   }
-  render(w) {
+  render() {
     return (
     	 <header>
          	<div className="">

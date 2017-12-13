@@ -14,8 +14,8 @@ class Weather extends Component {
             <section className = "hero" >
                 <div className = "hero-body" >
                     <div className = "columns">
-                        <div className = "column" >{weatherData.wind.speed}</div> 
                         <div className = "column">{weather.main}</div> 
+                        <div className = "column" >{weatherData.wind.speed}</div> 
                     </div> 
                     <div className = "columns">
                         <div className = "column" >{weatherData.main.temp}</div>
