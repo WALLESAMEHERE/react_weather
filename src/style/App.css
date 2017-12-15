@@ -1,5 +1,102 @@
 /*! bulma.io v0.5.3 | MIT License | github.com/jgthms/bulma */
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Lobster';
+/*--------------------------------------*/
+/*
+  #1d2b3c
+*/
+.container{
+  font-size:2em;
+  font-family: 'Montserrat', sans-serif !important;
+  color:#1e1e24;
+  background: linear-gradient(#dfe2c9, #adeacd);
+  z-index: 0;  
+  overflow: hidden;
+}
+.Footer{
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+}.Footer::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    z-index:99;
+    background:url(../images/city.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    bottom: 0px;
+    height: 200px;
+    opacity: 0.4;
+}
+.Footer p{
+  float: right;
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
+}
+header{
+  z-index: -1;
+}
+h1{
+  font-family: 'Montserrat', sans-serif !important;
+  color:#1e1e24;
+}
+.Footer{
+  font-size: .3em;
+}
+.cloud, .wind{
+  font-size: .7em;
+}
+.cloud img{
+  width: 50%;
+}
+.wind img{
+  width: 20%;
+}
+.temperature{
+  font-size: 3.7rem;
+}
+.temperature sup{
+  font-size: .7em;
+}
+.currentCity{
+  font-size: 1em;
+}
+.currentCity img{
+    width: 4%;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+.title{
+  font-size: 1.6em !important;
+}
+.hero-body{
+
+}
+input[type=search], input[type=password] {
+  display: inline-block;
+  color:grey;
+  padding: 6px;
+  width: 250px;
+  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  font-size: .6em;
+  outline: none;
+ }
+ button{
+    transition: all 0.2s ease-in-out;
+    font: 18px Helvetica, Arial, sans-serif;
+    border: none;
+    background: #1aaf75;
+    color: #fff;
+    padding: 7px 40px;
+    outline: none;
+ }
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -11,10 +108,10 @@ html,
 body,
 p,
 ol,
-ul,
+ul,y
 li,
 dl,
-dt,
+dt,y
 dd,
 blockquote,
 figure,
@@ -6156,10 +6253,8 @@ label.panel-block {
 
 .container {
   margin-top: 5px !important;
-  border: 2px solid black;
   border-radius: 5px;
-  background-color: #F5F5F5;
-  color: #1E2226; }
+  color: #1E1e24; }
 
 body {
   margin: 0;
@@ -6169,3 +6264,6 @@ body {
 
 header {
   text-align: center; }
+
+.container {
+  background-color: #bef7de; }

@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="Footer">
+      	<div className="currentTime">my super time</div>
           <p>CREATED BY BdevLUKAS</p>
       </div>
     );

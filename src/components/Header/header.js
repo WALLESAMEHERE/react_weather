@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Img from 'react-image';
 import WeatherForm from '../WeatherForm';
 
 class Header extends Component {
@@ -14,14 +15,19 @@ class Header extends Component {
     });
     this.props.updateObj(this.state.obj);
   }
+  cityTrue(){
+    if(this.state.obj.name){
+      return <p className="currentCity"><Img src={require("../../images/tower.svg")}/>{this.state.obj.name}</p>;
+    }
+  }
   render() {
     return (
     	 <header>
          	<div className="">
          		<div className="">
-         			 <h1 className="title"> WHAT WEATHER ??</h1>
+         			 <h1 className="title"> Weather App</h1>
                       <WeatherForm getWeather={this.getWeather} />
-               <p className="currentCity">place : {this.state.obj.name}</p>
+               {this.cityTrue()}
          		</div>
          	</div>
         </header>
