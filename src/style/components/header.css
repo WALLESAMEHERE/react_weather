@@ -1,0 +1,9 @@
+.currentCity {
+  font-size: 1em; }
+  .currentCity img {
+    width: 4%;
+    margin: 0 15px;
+    vertical-align: middle; }
+
+.title {
+  font-size: 1.6em !important; }

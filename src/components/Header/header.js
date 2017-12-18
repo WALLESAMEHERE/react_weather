@@ -25,7 +25,7 @@ class Header extends Component {
     	 <header>
          	<div className="">
          		<div className="">
-         			 <h1 className="title"> Weather App</h1>
+         			 <h1 className="title">{this.props.title}</h1>
                       <WeatherForm getWeather={this.getWeather} />
                {this.cityTrue()}
          		</div>

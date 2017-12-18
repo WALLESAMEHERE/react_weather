@@ -1,23 +1,37 @@
 @import '../../node_modules/bulma/bulma.sass';
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
-.columns
-	margin-top:0 !important
-.container
-	margin-top: 5px !important
-	border-radius: 5px
-	color:#1E1e24
+@import './utils/colors.sass';
+@import './base/main.sass';
+@import './components/header.sass';
+@import './components/footer.sass';
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Lobster';
 
-body 
-	margin: 0
-	padding: 0
-	font-family: sans-serif
-	text-align: center
+/* BALAGAN */
 
-header
-	text-align: center
+.cloud, .wind
+  font-size: .7em;
 
-.container
-	background-color:#bef7de
+.cloud img
+  width: 50%;
+
+.wind img
+  width: 25%;
+.temperature
+  font-size: 3.7rem;
+
+.temperature sup
+  font-size: .7em;
+
+.currentTime
+    float: left;
+    position: absolute;
+    bottom: 2px;
+    left: 15px;
+    font-size: 1.5rem;
+
+
+ 
 
 
 

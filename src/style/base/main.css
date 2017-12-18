@@ -1,0 +1,19 @@
+.columns {
+  margin-top: 0 !important; }
+
+.container {
+  margin-top: 5px !important;
+  border-radius: 5px;
+  color: #1E1e24;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif !important;
+  color: #1e1e24;
+  z-index: 0;
+  overflow: hidden; }
+
+header {
+  z-index: -1; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #1e1e24; }

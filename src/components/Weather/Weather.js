@@ -40,7 +40,11 @@ class Weather extends Component {
         styles.transform = "rotate("+windDir+"deg)";
         return styles;
     }
-
+    const getWindSpeed = ()=>{
+        const changeVal = weatherData.wind.speed*3.6;
+        const roundVal = changeVal.toFixed(1);
+        return roundVal
+    }
     return ( 
             <section className = "hero">
                 <div className = "hero-body" >
@@ -53,12 +57,12 @@ class Weather extends Component {
                             <div className = "column wind_arrow"><Img src={require("../../images/baro.svg")} alt="wind arrow" /></div>
                             {pressure} hPa
                         </div>                         <div className = "column wind" >
-                            <div className = "column wind_arrow"><Img src={require("../../images/humid.svg")} alt="wind arrow" /></div>
+                            <div className = "column wind_arrow"><Img src={require("../../images/humid.svg")} alt="humadity" /></div>
                             {humidity} %
                         </div> 
                         <div className = "column wind" >
                             <div className = "column wind_arrow"><Img style={getWindDir()} src={require("../../images/wind-arrow.svg")} alt="wind arrow" /></div>
-                            {weatherData.wind.speed*3.6} km/h
+                            {getWindSpeed()} km/h
                         </div> 
 
                     </div> 

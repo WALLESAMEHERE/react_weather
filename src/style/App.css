@@ -2,101 +2,6 @@
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 @import 'https://fonts.googleapis.com/css?family=Lobster';
-/*--------------------------------------*/
-/*
-  #1d2b3c
-*/
-.container{
-  font-size:2em;
-  font-family: 'Montserrat', sans-serif !important;
-  color:#1e1e24;
-  background: linear-gradient(#dfe2c9, #adeacd);
-  z-index: 0;  
-  overflow: hidden;
-}
-.Footer{
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 150px;
-    z-index: -1;
-}.Footer::after{
-    content: "";
-    position: absolute;
-    left: 0px;
-    z-index:99;
-    background:url(../images/city.svg);
-    background-repeat: repeat-x;
-    width: 100%;
-    bottom: 0px;
-    height: 200px;
-    opacity: 0.4;
-}
-.Footer p{
-  float: right;
-    position: absolute;
-    bottom: 2px;
-    right: 4px;
-}
-header{
-  z-index: -1;
-}
-h1{
-  font-family: 'Montserrat', sans-serif !important;
-  color:#1e1e24;
-}
-.Footer{
-  font-size: .3em;
-}
-.cloud, .wind{
-  font-size: .7em;
-}
-.cloud img{
-  width: 50%;
-}
-.wind img{
-  width: 20%;
-}
-.temperature{
-  font-size: 3.7rem;
-}
-.temperature sup{
-  font-size: .7em;
-}
-.currentCity{
-  font-size: 1em;
-}
-.currentCity img{
-    width: 4%;
-    margin: 0 15px;
-    vertical-align: middle;
-}
-.title{
-  font-size: 1.6em !important;
-}
-.hero-body{
-
-}
-input[type=search], input[type=password] {
-  display: inline-block;
-  color:grey;
-  padding: 6px;
-  width: 250px;
-  box-sizing: border-box;
-  background-color: white;
-  border: none;
-  font-size: .6em;
-  outline: none;
- }
- button{
-    transition: all 0.2s ease-in-out;
-    font: 18px Helvetica, Arial, sans-serif;
-    border: none;
-    background: #1aaf75;
-    color: #fff;
-    padding: 7px 40px;
-    outline: none;
- }
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -108,10 +13,10 @@ html,
 body,
 p,
 ol,
-ul,y
+ul,
 li,
 dl,
-dt,y
+dt,
 dd,
 blockquote,
 figure,
@@ -6254,7 +6159,15 @@ label.panel-block {
 .container {
   margin-top: 5px !important;
   border-radius: 5px;
-  color: #1E1e24; }
+  color: #1e1e24;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif !important;
+  z-index: 0;
+  overflow: hidden; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #1e1e24; }
 
 body {
   margin: 0;
@@ -6263,7 +6176,95 @@ body {
   text-align: center; }
 
 header {
-  text-align: center; }
+  text-align: center;
+  z-index: -1; }
 
-.container {
-  background-color: #bef7de; }
+.pre-loader {
+  background-color: red;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  position: fixed;
+  display: none; }
+
+input[type=search] {
+  display: inline-block;
+  color: #7a7a7a;
+  padding: 7px;
+  width: 250px;
+  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  font-size: .5em;
+  margin-top: 5px;
+  outline: none; }
+
+button {
+  font: 18px Helvetica, Arial, sans-serif;
+  border: none;
+  background-color: #23d160;
+  color: white;
+  padding: 7px 40px;
+  outline: none;
+  transition: all 0.2s ease-in-out; }
+  button:hover {
+    color: darkgreen; }
+
+.currentCity {
+  font-size: 1em; }
+  .currentCity img {
+    width: 4%;
+    margin: 0 15px;
+    vertical-align: middle; }
+
+.title {
+  font-size: 1.6em !important; }
+
+.Footer {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  height: 150px;
+  font-size: .3em; }
+  .Footer:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    z-index: 99;
+    background: url(../images/city.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    bottom: 0px;
+    height: 200px;
+    opacity: 0.4; }
+
+.Footer p {
+  float: right;
+  position: absolute;
+  bottom: 2px;
+  right: 4px; }
+
+/* BALAGAN */
+.cloud, .wind {
+  font-size: .7em; }
+
+.cloud img {
+  width: 50%; }
+
+.wind img {
+  width: 25%; }
+
+.temperature {
+  font-size: 3.7rem; }
+
+.temperature sup {
+  font-size: .7em; }
+
+.currentTime {
+  float: left;
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  font-size: 1.5rem; }
