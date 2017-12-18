@@ -6190,11 +6190,11 @@ header {
 
 input[type=search] {
   display: inline-block;
-  color: #7a7a7a;
+  color: #808080;
   padding: 7px;
   width: 250px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: #fff;
   border: none;
   font-size: .5em;
   margin-top: 5px;
@@ -6203,8 +6203,8 @@ input[type=search] {
 button {
   font: 18px Helvetica, Arial, sans-serif;
   border: none;
-  background-color: #23d160;
-  color: white;
+  background-color: #1aaf75;
+  color: #fff;
   padding: 7px 40px;
   outline: none;
   transition: all 0.2s ease-in-out; }
@@ -6239,12 +6239,18 @@ button {
     bottom: 0px;
     height: 200px;
     opacity: 0.4; }
+  .Footer p {
+    float: right;
+    position: absolute;
+    bottom: 2px;
+    right: 4px; }
 
-.Footer p {
-  float: right;
+.currentTime {
+  float: left;
   position: absolute;
   bottom: 2px;
-  right: 4px; }
+  left: 15px;
+  font-size: 1.5rem; }
 
 /* BALAGAN */
 .cloud, .wind {
@@ -6261,10 +6267,3 @@ button {
 
 .temperature sup {
   font-size: .7em; }
-
-.currentTime {
-  float: left;
-  position: absolute;
-  bottom: 2px;
-  left: 15px;
-  font-size: 1.5rem; }

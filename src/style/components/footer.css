@@ -16,9 +16,15 @@
     bottom: 0px;
     height: 200px;
     opacity: 0.4; }
+  .Footer p {
+    float: right;
+    position: absolute;
+    bottom: 2px;
+    right: 4px; }
 
-.Footer p {
-  float: right;
+.currentTime {
+  float: left;
   position: absolute;
   bottom: 2px;
-  right: 4px; }
+  left: 15px;
+  font-size: 1.5rem; }
