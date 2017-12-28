@@ -8,7 +8,7 @@ class Weather extends Component {
     render() {
 
     const weatherData = this.props.currentWeather;
-    if (!weatherData) return <div>Loadin weather ...</div>;
+    if (!weatherData) return <div>...</div>;
     const weather = weatherData.weather[0];
     const pressure = weatherData.main.pressure
     const humidity = weatherData.main.humidity
@@ -49,20 +49,21 @@ class Weather extends Component {
             <section className = "hero">
                 <div className = "hero-body" >
                     <div className = "columns">
-                        <div className = "column cloud"><Img src={getImage()} alt={weather.descripton} /></div> 
+                        <div className = "column weather_main"><Img src={getImage()} alt={weather.descripton} /></div> 
                         <div className = "column temperature" >{round}<sup>o</sup>C</div>
                     </div> 
                     <div className = "columns">
-                        <div className = "column wind" >
-                            <div className = "column wind_arrow"><Img src={require("../../images/baro.svg")} alt="wind arrow" /></div>
-                            {pressure} hPa
-                        </div>                         <div className = "column wind" >
-                            <div className = "column wind_arrow"><Img src={require("../../images/humid.svg")} alt="humadity" /></div>
-                            {humidity} %
+                        <div className = "column" >
+                            <div className = "column weather_box"><Img src={require("../../images/baro.svg")} alt="wind arrow" /></div>
+                            <p>{pressure} hPa</p>
+                        </div>
+                        <div className = "column" >
+                            <div className = "column weather_box"><Img src={require("../../images/humid.svg")} alt="humadity" /></div>
+                            <p>{humidity} %</p>
                         </div> 
-                        <div className = "column wind" >
-                            <div className = "column wind_arrow"><Img style={getWindDir()} src={require("../../images/wind-arrow.svg")} alt="wind arrow" /></div>
-                            {getWindSpeed()} km/h
+                        <div className = "column" >
+                            <div className = "column weather_box"><Img style={getWindDir()} src={require("../../images/wind-arrow.svg")} alt="wind arrow" /></div>
+                            <p>{getWindSpeed()} km/h</p>
                         </div> 
 
                     </div> 

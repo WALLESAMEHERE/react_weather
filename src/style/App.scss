@@ -2,24 +2,16 @@
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 @import './utils/colors.scss';
 @import './base/main.scss';
+@import './components/preloader.scss';
 @import './components/header.scss';
 @import './components/footer.scss';
+@import './components/weather.scss';
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 @import 'https://fonts.googleapis.com/css?family=Lobster';
 
-/* BALAGAN */
+/* BALAGAN bo testowane*/
 
-.cloud, .wind{
-  font-size: .7em;
-}
 
-.cloud img{
-  width: 50%;
-}
-
-.wind img{
-  width: 25%;
-}
 .temperature{
   font-size: 3.7rem;
 }

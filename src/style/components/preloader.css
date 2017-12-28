@@ -1,0 +1,32 @@
+.pre-loader {
+  background-color: whitesmoke;
+  width: 102%;
+  height: 100%;
+  z-index: 9999;
+  position: fixed;
+  transition: 2s; }
+
+.is-center-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; }
+
+.hide-it {
+  display: none; }
+
+.weather_main img {
+  width: 40%; }
+
+.weather_box {
+  font-size: .6em;
+  display: inline;
+  text-align: center; }
+  .weather_box img {
+    width: 20%; }
+
+.weather_temperature {
+  font-size: 3.7rem; }
+  .weather_temperature sup {
+    font-size: .7em; }

@@ -25,15 +25,6 @@ header{
 	text-align: center;
 	z-index: -1;
 }
-.pre-loader{
-  background-color: red;
-  opacity: .5;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  position: fixed;
-  display: none;
-}
 input[type=search]{
   display: inline-block;
   color: $grey;

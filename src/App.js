@@ -10,7 +10,8 @@ class App extends Component {
     super();
       this.state = {
           cityWeather:'',
-          day:''
+          day:'',
+          loaded:''
       };     
       this.getWeather = this.getWeather.bind(this);
       this.getDayNightBg = this.getDayNightBg.bind(this);
@@ -26,6 +27,14 @@ class App extends Component {
         day:resp
       });
     }
+  componentDidMount() {
+    setTimeout( () => {
+      this.setState({
+          loaded:true
+      });
+    },5000 )
+  } 
+
   render() {
     const bgColor =()=> {
       const styles = {};
@@ -42,7 +51,7 @@ class App extends Component {
     }
     return (      
       <div className="columns">
-       <div className="pre-loader"><Preloader /></div>
+       <div className={ `pre-loader ${this.state.loaded ? 'hide-it' : null}` }><Preloader /></div>
         <div className="column is-6 is-offset-3 container" style={bgColor()}>
             <Header updateObj={this.getWeather} title=" Weather App" />
             <Weather currentWeather={this.state.cityWeather}/>

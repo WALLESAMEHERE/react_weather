@@ -32,8 +32,8 @@ handleSubmit(e) {
   render() {
     return (
             <form onSubmit={this.handleSubmit.bind(this)}>
-                <input type="search" ref="name" placeholder="wpisz miasto" />
-                 <button type="submit">Login</button>
+                <input type="search" ref="name" placeholder="city" />
+                 <button type="submit">Show</button>
             </form>
     );
   }
