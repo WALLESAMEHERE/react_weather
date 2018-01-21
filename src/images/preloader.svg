@@ -13,8 +13,9 @@
 <rect id="XMLID_6_" x="6.2" y="9.5" class="st1" width="1.7" height="0.9"/>
 <circle id="XMLID_5_" class="st0" cx="7" cy="11.3" r="2.2"/>
 <rect id="XMLID_4_" x="6.6" y="1.5" class="st1" width="0.8" height="9.4"/>
-<circle id="XMLID_3_" class="st2 coloro" cx="7" cy="11.3" r="1.5">
+<circle id="XMLID_3_" class="st2 coloro" cx="7" cy="11.3" r="1.8">
 	<animate class="st2 st3" attributeName="fill" dur="3s" from="#899aa4" to="#D88485"  />
+	<animate class="st2 st3" attributeName="r" dur="3s" from="1.3" to="1.8"  />
 </circle>
 <rect x="-7.27" y="-10" class="st3 coloro" width="0.5" height="8.3" transform="rotate(180)">
 	<animate xmlns="http://www.w3.org/2000/svg" id="battery-fill" attributeName="height" dur="3s" from="0" to="8.3"  />

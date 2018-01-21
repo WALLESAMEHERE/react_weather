@@ -6215,25 +6215,50 @@ button {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  animation: shake 4s linear;
+  transform-origin: center center; }
+  .is-center-img img {
+    width: 20%; }
 
 .hide-it {
   display: none; }
 
-.weather_main img {
-  width: 40%; }
-
-.weather_box {
-  font-size: .6em;
-  display: inline;
-  text-align: center; }
-  .weather_box img {
-    width: 20%; }
-
-.weather_temperature {
-  font-size: 3.7rem; }
-  .weather_temperature sup {
-    font-size: .7em; }
+@keyframes shake {
+  0% {
+    transform: rotate(0deg); }
+  71% {
+    transform: rotate(0deg); }
+  72% {
+    transform: rotate(-7deg); }
+  73% {
+    transform: rotate(0deg); }
+  74% {
+    transform: rotate(7deg); }
+  75% {
+    transform: rotate(7deg); }
+  76% {
+    transform: rotate(0deg); }
+  77% {
+    transform: rotate(7deg); }
+  78% {
+    transform: rotate(0deg); }
+  79% {
+    transform: rotate(0deg); }
+  81% {
+    transform: rotate(-7deg); }
+  83% {
+    transform: rotate(0deg); }
+  84% {
+    transform: rotate(7deg); }
+  87% {
+    transform: rotate(-7deg); }
+  89% {
+    transform: rotate(0deg); }
+  91% {
+    transform: rotate(10deg); }
+  100% {
+    transform: rotate(0deg); } }
 
 .currentCity {
   font-size: 1em; }
@@ -6280,9 +6305,7 @@ button {
   width: 40%; }
 
 .weather_box {
-  font-size: .6em;
-  display: inline;
-  text-align: center; }
+  font-size: .6em; }
   .weather_box img {
     width: 20%; }
 
@@ -6292,8 +6315,3 @@ button {
     font-size: .7em; }
 
 /* BALAGAN bo testowane*/
-.temperature {
-  font-size: 3.7rem; }
-
-.temperature sup {
-  font-size: .7em; }

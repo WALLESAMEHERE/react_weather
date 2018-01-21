@@ -50,7 +50,7 @@ class Weather extends Component {
                 <div className = "hero-body" >
                     <div className = "columns">
                         <div className = "column weather_main"><Img src={getImage()} alt={weather.descripton} /></div> 
-                        <div className = "column temperature" >{round}<sup>o</sup>C</div>
+                        <div className = "column weather_temperature" >{round}<sup>o</sup>C</div>
                     </div> 
                     <div className = "columns">
                         <div className = "column" >

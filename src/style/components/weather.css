@@ -2,9 +2,7 @@
   width: 40%; }
 
 .weather_box {
-  font-size: .6em;
-  display: inline;
-  text-align: center; }
+  font-size: .6em; }
   .weather_box img {
     width: 20%; }
 
